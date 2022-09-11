@@ -5,8 +5,19 @@ console.log("connected")
 let zastor = document.getElementById("zastor");
 setTimeout(()=>{
     zastor.style.transform ="translateY(-4000px)"}
-    ,500)
+    ,1000)
     
+
+
+
+// nav skrollanje
+function skrollaj(ime){
+    let el = document.getElementById(ime);
+    el.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
 
 
 // pojavljivanje sidebara

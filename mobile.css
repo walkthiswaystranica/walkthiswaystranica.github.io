@@ -39,39 +39,45 @@ header {
     align-items: center;
 }
 
-#buttons >* {
-    max-width: 20%;
-    padding: 5px 1rem;
-}
-
 #wtw-ikona {
     max-width: 95px;
     padding: 0px;
     margin: 0px;
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
+
 
 .bs {
     display: none;
 }
 
+/* za sidebar*/
+
 #mobile-sidebar {
     position: fixed;
     top: 93px;
     right: 0px;
-    width: 300px;
+    width: 280px;
     height: 100vh;
-    padding: 5px;
-    background-color: black;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.807);
 
     display: flex;
     flex-direction: column;
     transform: translateX(320px);
     transition: all 0.5s;
+}
+#mobile-sidebar >* {
+    margin: 5px;
+}
+
+#mobile-sidebar a:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.2971867846835191) 0%, rgba(249,249,249,0.18253710315485672) 50%, rgba(255,255,255,0) 100%);
 }
 
 #crtice {
@@ -265,4 +271,13 @@ aside {
 
 footer {
     text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem 5rem 2rem;
+    
+}
+footer img {
+    max-width: 40px;
 }

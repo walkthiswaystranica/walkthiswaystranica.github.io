@@ -22,18 +22,18 @@
     <header>
         <!-- -->
         <nav id="buttons">
-            <div id="wtw-ikona"><a href=""><img src="./pictures/wtw.jpg" alt="Walk this way"></a></div>
-        <a href="" class="bs">Najnovije</a>
-        <a href="" class="bs">Svirke</a>
-        <a href="" class="bs">Zanimljivosti</a>
-        <a href="" class="bs">O nama</a>
-        <a href="" class="bs">Arhiva</a>
+            <div id="wtw-ikona"><a href="./index.html"><img src="./pictures/wtw.jpg" alt="Walk this way"></a></div>
+            <span onclick="skrollaj('infinite-scroll')" class="bs">Najnovije</span>
+            <span onclick="skrollaj('svirke')" class="bs">Svirke</span>
+            <span onclick="skrollaj('zanimljivosti')" class="bs">Zanimljivosti</span>
+            <span onclick="skrollaj('recenzije')" class="bs">Recenzije</span>
+            <a href="./sites/o_nama/index.html" class="bs">O nama</a>
         </nav>
             <!-- desno allignat -->
         <nav id="socials" class="bs">
-            <div><a><img src="./pictures/ig_icon.png" alt="ig"></a></div>
-            <div><a><img src="./pictures/yt_icon.png" alt="yt"></a></div>
-            <div><a><img src="./pictures/search.png" alt=""></a></div>
+            <div><a href="https://www.instagram.com/walk.this.way.stranica/"><img src="./pictures/ig_icon.png" alt="ig"></a></div>
+            <div><a href="https://www.youtube.com/watch?v=SHa1UZfEkj8"><img src="./pictures/yt_icon.png" alt="yt"></a></div>
+            <div><a href="./sites/arhiva/index.html"><img src="./pictures/search.png" alt=""></a></div>
         </nav>
 
         <nav id="crtice" class="ss">
@@ -42,17 +42,14 @@
             <div id="mobile-sidebar">
                 <h2>Navigacija</h2>
                 <br>
-                <a href="">Najnovije</a>
-                <a href="">Svirke</a>
-                <a href="">Zanimljivosti</a>
-                <a href="">O nama</a>
-                <a href="">Arhiva</a>
+                <a href="./sites/arhiva/index.html">Pretraži</a>
+                <span onclick="skrollaj('infinite-scroll')" class="ss">Najnovije</span>
+                <span onclick="skrollaj('svirke')" class="ss">Svirke</span>
+                <span onclick="skrollaj('zanimljivosti')" class="ss">Zanimljivosti</span>
+                <span onclick="skrollaj('recenzije')" class="ss">Recenzije</span>
+                <a href="./sites/o_nama/index.html" class="ss">O nama</a>
 
                 <p>Promovišemo Rock svu kulturu, i staro i novo! Ako imaš bend i zeliš da pišemo o tebi kontaktiraj nas!</p>
-                <div>
-                    <a><img src="" alt="ig"></a>
-                    <a><img src="" alt="yt"></a>
-                </div>
             </div>
         </nav>
     </header>
@@ -70,97 +67,159 @@
 
             <section id="infinite-scroll">
                 <div class="photobanner">
-                    <figure><img src="./pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption></figure> <figure> <img src="./pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption></figure><figure><img src="./pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption></figure>
-                    <figure><img src="./pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption></figure> <figure> <img src="./pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption></figure><figure><img src="./pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption></figure>
+                    <figure class="anchor"><img src="./pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption> <div class="folija"></div></figure> <figure class="anchor"> <img src="./pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption><div class="folija"></div></figure><figure class="anchor"><img src="./pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption><div class="folija"></div></figure>
+                    <figure class="anchor"><img src="./pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption> <div class="folija"></div></figure> <figure class="anchor"> <img src="./pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption><div class="folija"></div></figure><figure class="anchor"><img src="./pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption><div class="folija"></div></figure>
                 </div>
             </section>
 
             <section>
                 <h2>Svirke</h2>
-                <div class="grid">
-                    <article>
-                        <img src="./pictures/1.jpeg" alt="">
-                        <figcaption>
-                            Vijest! nesto se desilo<br>10.9.2022
-                        </figcaption>
-                    </article>
-                    <article>
-                        <img src="./pictures/2.jpeg" alt="">
-                        <figcaption>
-                            Vijest! nesto se desilo<br>10.9.2022
-                        </figcaption>
-                    </article>
-                    <article>
+                <div class="grid" id="svirke">
+                    <article class="anchor">
                         <img src="./pictures/3.jpeg" alt="">
                         <figcaption>
                             Vijest! nesto se desilo<br>10.9.2022
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
-                    <article>
-                        <img src="./pictures/4.jpeg" alt="">
-                        <figcaption>
-                            Vijest! nesto se desilo<br>10.9.2022
-                        </figcaption>
-                    </article>
-                    <article>
-                        <img src="./pictures/slika.JPG" alt="">
-                        <figcaption>
-                            Vijest! nesto se desilo<br>10.9.2022
-                        </figcaption>
-                    </article>
-                    <article>
+
+                    <article class="anchor">
                         <img src="./pictures/1.jpeg" alt="">
                         <figcaption>
                             Vijest! nesto se desilo<br>10.9.2022
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
+
+                    <article class="anchor">
+                        <img src="./pictures/4.jpeg" alt="">
+                        <figcaption>
+                            Vijest! nesto se desilo<br>10.9.2022
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+
+                    <article class="anchor">
+                        <img src="./pictures/3.jpeg" alt="">
+                        <figcaption>
+                            Vijest! nesto se desilo<br>10.9.2022
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+
+                    <article class="anchor">
+                        <img src="./pictures/4.jpeg" alt="">
+                        <figcaption>
+                            Vijest! nesto se desilo<br>10.9.2022
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+
+                    <article class="anchor">
+                        <img src="./pictures/1.jpeg" alt="">
+                        <figcaption>
+                            Vijest! nesto se desilo<br>10.9.2022
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+
                 </div>
             </section>
 
             <section>
                 <h2>Zanimljivosti</h2>     
-                <div class="grid">
-                    <article>
+                <div class="grid" id="zanimljivosti">
+                    <article class="anchor">
                         <img src="./pictures/wtw.jpg" alt="">
                         <figcaption>
                             nesto brate drama zanimljivo<br>12.8.2022.
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
-                    <article>
+                    <article class="anchor">
                         <img src="./pictures/2.jpeg" alt="">
                         <figcaption>
                             nesto brate drama zanimljivo<br>12.8.2022.
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
-                    <article>
+                    <article class="anchor">
                         <img src="./pictures/1.jpeg" alt="">
                         <figcaption>
                             nesto brate drama zanimljivo<br>12.8.2022.
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
-                    <article>
+                    <article class="anchor">
                         <img src="./pictures/4.jpeg" alt="">
                         <figcaption>
                             nesto brate drama zanimljivo<br>12.8.2022.
                         </figcaption>
+                        <div class="folija"></div>
                     </article>
-                    <article>
+                    <article class="anchor">
                         <img src="./pictures/wtw.jpg" alt="">
                         <figcaption>
                             nesto brate drama zanimljivo<br>12.8.2022.
                         </figcaption>
+                        <div class="folija"></div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Recenzije</h2>     
+                <div class="grid" id="recenzije">
+                    <article class="anchor">
+                        <img src="./pictures/4.jpeg" alt="">
+                        <figcaption>
+                            Wow drugaciji tekst??<br>12.8.2022.
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+                    <article class="anchor">
+                        <img src="./pictures/1.jpeg" alt="">
+                        <figcaption>
+                            Da jeste drugaciji<br>12.8.2022.
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+                    <article class="anchor">
+                        <img src="./pictures/3.jpeg" alt="">
+                        <figcaption>
+                            OVDJE I DATUM<br>11.9.2022.
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+                    <article class="anchor">
+                        <img src="./pictures/2.jpeg" alt="">
+                        <figcaption>
+                            Na onaj gore datum sam ovo mijenjao<br>12.8.2022.
+                        </figcaption>
+                        <div class="folija"></div>
+                    </article>
+                    <article class="anchor">
+                        <img src="./pictures/wtw.jpg" alt="">
+                        <figcaption>
+                            Kukuriku<br>12.8.2022.
+                        </figcaption>
+                        <div class="folija"></div>
                     </article>
                 </div>
 
                 
             </section>
             <footer class="bs">
-                <p>Walk this way <br>all rights reserved korporacija</p>
-                <p>kontakt: <br> instagram <br> fejzbuk <br> jutjub</p>
+                <p>Ne možeš naći članak koji tražiš? <a href="">Klikni ovdje</a></p>
+                <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                    Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                    <a href=""><img src="./pictures/ig_icon.png" alt=""></a>
+                    <a href=""><img src="./pictures/yt_icon.png" alt=""></a>
             </footer>
         </div>
 
         <aside id="aside">
+            <h2 class="ss">Galerija</h2>
             <article class="anchor">
                 <img src="./pictures/slika.JPG" alt="" id="galerijica">
                 <div class="folija"><figcaption>Galerija</figcaption></div>
@@ -177,8 +236,11 @@
         </aside>
         
         <footer class="ss">
-            <p>Walk this way <br>all rights reserved korporacija</p>
-            <p>kontakt: <br> instagram <br> fejzbuk <br> jutjub</p>
+            <p>Ne možeš naći članak koji tražiš? <a href="">Klikni ovdje</a></p>
+            <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                <a href=""><img src="./pictures/ig_icon.png" alt=""></a>
+                <a href=""><img src="./pictures/yt_icon.png" alt=""></a>
         </footer>
     </main>  
     <script src="js.js"></script>

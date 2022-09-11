@@ -29,6 +29,7 @@ header {
     left: 0px;
     top: 0px;
     height: 100px;
+    z-index: 100;
 }
 
 #buttons {
@@ -49,28 +50,50 @@ header {
     margin: 0px;
 }
 
-header a, footer a {
+header a {
     color: white;
     text-decoration: none;
 }
 
-#socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    padding-right: 3rem;
-
-}
-
-#socials >* {
-    padding: 5px 1rem;
-    max-width: 30px;
-}
-
-.ss {
+.bs {
     display: none;
 }
+
+#mobile-sidebar {
+    position: fixed;
+    top: 93px;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    padding: 5px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    transform: translateX(320px);
+    transition: all 0.5s;
+}
+
+#crtice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crtice img {
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#crtice:hover img{
+    opacity: 0;
+}
+
+#crtice:hover #mobile-sidebar {
+    transform: translateX(0px);
+}
+
+
 
 /* za zastor*/
 
@@ -89,7 +112,7 @@ header a, footer a {
 }
 
 #zastor img {
-    max-width: 500px;
+    width: 50%;
     opacity: 0;
     animation: loadanje 4s infinite;
 }
@@ -103,46 +126,6 @@ header a, footer a {
 
 main {
     padding-top: 92px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content {
-    margin-right: 320px;
-    height: calc(100vh - 93px);
-    overflow-x: scroll;
-}
-
-aside {
-    width: 300px;
-    height: calc(100vh - 93px);
-    position: fixed;
-    right: 10px;
-    padding-left: 10px;
-    border-left: 2px black solid;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    background-image: url("./pictures/rock.jpg");
-    background-size: contain;
-}
-
-.sidebar-hidden .content {
-    margin-right: 0px
-}
-.sidebar-hidden aside {
-    margin-right: -320px
-}
-
-.content, aside {
-    transition: all 0.5s ease-in;
-}
-
-#pad {
-    height: 100px;
 }
 
 .anchor {
@@ -180,18 +163,16 @@ aside {
 }
 
 #banner h1 {
-    margin: 0px;
-    padding-top:50px ;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .content section {
-    margin: 10px 5rem;
+    margin: 10px ;
 }
 
 #glavna figure {
@@ -199,11 +180,16 @@ h1 {
     margin: 10px auto;
 }
 
+aside { 
+    margin: 10px;
+}
+
 /* infinite scroll*/
 
 #infinite-scroll {
-    height:350px; 
+    height:200px; 
     margin: 10px 0px;
+
     position:relative; 
     overflow:hidden;
     border-top: 5px black solid;
@@ -217,6 +203,7 @@ h1 {
     overflow:hidden; 
     white-space: nowrap;
     animation: bannermove 10s linear infinite;
+    z-index: 50;
   }
   
 .photobanner figure {
@@ -224,13 +211,13 @@ h1 {
     position: relative;   
     margin: 0px;
     width: fit-content;
-    height: 350px;
+    height: 200px;
   }
 
 .photobanner img {    
     margin: 0px;
     width: auto;
-    height: 350px;
+    height: 200px;
   }
   .photobanner figcaption {
     position:absolute; 
@@ -239,6 +226,7 @@ h1 {
     width: 70%;
     color: white;
     text-shadow: 1px 1px 5px black; 
+    z-index: 51;
   }
   
   @keyframes bannermove {
@@ -255,7 +243,7 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) );
 }
 
 .grid article {
@@ -265,24 +253,16 @@ h1 {
 
 .grid article figcaption {
     position:absolute; 
-    top:60%; 
+    top:50%; 
     left:10px;
-    width: 80%;
+    width: 90%;
     color: white;
     text-shadow: 1px 1px 5px black; 
+    font-size: 0.8rem;
 }
 
 /* za footer*/
 
 footer {
     text-align: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 2rem 5rem 2rem;
-    
-}
-footer img {
-    max-width: 40px;
 }

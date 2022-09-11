@@ -49,7 +49,7 @@ header {
     margin: 0px;
 }
 
-header a, footer a {
+header a {
     color: white;
     text-decoration: none;
 }
@@ -276,13 +276,4 @@ h1 {
 
 footer {
     text-align: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 2rem 5rem 2rem;
-    
-}
-footer img {
-    max-width: 40px;
 }
