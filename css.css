@@ -1,0 +1,279 @@
+/*
+prvi breakpoint je 950
+z index ide 1-100
+*/
+
+body {
+    font-family: 'New Rocker', cursive;
+    color: white;
+    margin: 0px;
+    
+    background-image: url("./pictures/r1.jpg");
+    background-size: contain;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height:100px ;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#buttons >* {
+    max-width: 20%;
+    padding: 5px 1rem;
+}
+
+#wtw-ikona {
+    max-width: 95px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+
+}
+
+#socials >* {
+    padding: 5px 1rem;
+    max-width: 30px;
+}
+
+.ss {
+    display: none;
+}
+
+/* za zastor*/
+
+#zastor {
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in;
+}
+
+#zastor img {
+    width: 50%;
+    opacity: 0;
+    animation: loadanje 4s infinite;
+}
+@keyframes loadanje {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* main i aside proporcija*/
+
+main {
+    padding-top: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    margin-right: 320px;
+    height: calc(100vh - 93px);
+    overflow-x: scroll;
+}
+
+aside {
+    width: 300px;
+    height: calc(100vh - 93px);
+    position: fixed;
+    right: 10px;
+    padding-left: 10px;
+    border-left: 2px black solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-image: url("./pictures/rock.jpg");
+    background-size: contain;
+}
+
+.sidebar-hidden .content {
+    margin-right: 0px
+}
+.sidebar-hidden aside {
+    margin-right: -320px
+}
+
+.content, aside {
+    transition: all 0.5s ease-in;
+}
+
+#pad {
+    height: 100px;
+}
+
+.anchor {
+    position: relative;
+    
+}
+
+.folija {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.folija:hover {
+    opacity: 1;
+}
+
+
+
+/* za content*/
+
+#banner {
+    margin: 0px;
+    color: white;
+    height: 200px;
+}
+
+#banner h1 {
+    margin: 0px;
+    padding-top:50px ;
+    font-size: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.content section {
+    margin: 10px 5rem;
+}
+
+#glavna figure {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* infinite scroll*/
+
+#infinite-scroll {
+    height:350px; 
+    margin: 10px 0px;
+    position:relative; 
+    overflow:hidden;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+  }
+  
+  .photobanner {
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    overflow:hidden; 
+    white-space: nowrap;
+    animation: bannermove 10s linear infinite;
+  }
+  
+.photobanner figure {
+    display: inline-block; 
+    position: relative;   
+    margin: 0px;
+    width: fit-content;
+    height: 350px;
+  }
+
+.photobanner img {    
+    margin: 0px;
+    width: auto;
+    height: 350px;
+  }
+  .photobanner figcaption {
+    position:absolute; 
+    top:70%; 
+    left:10px;
+    width: 70%;
+    color: white;
+    text-shadow: 1px 1px 5px black; 
+  }
+  
+  @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+  }
+
+
+  /* za grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+.grid article {
+    position: relative;
+    margin: 10px;
+}
+
+.grid article figcaption {
+    position:absolute; 
+    top:60%; 
+    left:10px;
+    width: 80%;
+    color: white;
+    text-shadow: 1px 1px 5px black; 
+}
+
+/* za footer*/
+
+footer {
+    text-align: center;
+}
