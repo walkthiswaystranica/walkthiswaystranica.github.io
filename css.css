@@ -111,7 +111,8 @@ main {
 .content {
     margin-right: 320px;
     height: calc(100vh - 93px);
-    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 aside {

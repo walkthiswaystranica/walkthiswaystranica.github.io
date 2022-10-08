@@ -8,13 +8,18 @@ body {
     color: white;
     margin: 0px;
     
-    background-image: url("./pictures/r1.jpg");
+    background-image: url("../pictures/r1.jpg");
     background-size: contain;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+p {
+    max-width: 30rem;
+    margin:  1rem auto;
 }
 
 header {
@@ -49,7 +54,7 @@ header {
     margin: 0px;
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
@@ -111,7 +116,8 @@ main {
 .content {
     margin-right: 320px;
     height: calc(100vh - 93px);
-    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 aside {
@@ -126,7 +132,7 @@ aside {
     flex-direction: column;
     justify-content: space-around;
 
-    background-image: url("./pictures/rock.jpg");
+    background-image: url("../../pictures/rock.jpg");
     background-size: contain;
 }
 
@@ -196,6 +202,11 @@ h1 {
 
 #glavna figure {
     max-width: 800px;
+    margin: 10px auto;
+}
+
+figure {
+    max-width: 600px;
     margin: 10px auto;
 }
 
@@ -276,4 +287,13 @@ h1 {
 
 footer {
     text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem 5rem 2rem;
+    
+}
+footer img {
+    max-width: 40px;
 }

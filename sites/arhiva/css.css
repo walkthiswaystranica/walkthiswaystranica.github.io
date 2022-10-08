@@ -1,0 +1,169 @@
+/*
+prvi breakpoint je 950
+z index ide 1-100
+*/
+
+body {
+    font-family: 'New Rocker', cursive;
+    color: white;
+    margin: 0px;
+    
+    background-image: url("../../pictures/r1.jpg");
+    background-size: contain;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height:100px ;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#buttons >* {
+    max-width: 20%;
+    padding: 5px 1rem;
+}
+
+#wtw-ikona {
+    max-width: 95px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+
+}
+
+#socials >* {
+    padding: 5px 1rem;
+    max-width: 30px;
+}
+
+.ss {
+    display: none;
+}
+
+
+.anchor {
+    position: relative;
+    
+}
+
+.folija {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.folija:hover {
+    opacity: 1;
+}
+
+  /* za grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(600px, 1fr) );
+}
+
+.grid article {
+    margin: 10px;
+    max-height: 200px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
+.grid article figure {
+    display: inline-block;
+}
+
+/* za footer*/
+
+footer {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem 5rem 2rem;
+    
+}
+footer img {
+    max-width: 40px;
+}
+
+/* sa search wds */
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  
+  input {
+    font-size: 1rem;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+  }
+  
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+  
+  .card > .body {
+    font-size: .8rem;
+    color: #777;
+  }
+  
+  .hide {
+    display: none;
+  }

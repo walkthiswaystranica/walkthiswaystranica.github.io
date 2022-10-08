@@ -42,3 +42,5 @@ let source_brojac = 0
 setInterval(() => {
     galerijica.src = "./pictures/" + (((source_brojac += 1) % 4)+1) + ".jpeg"
 }, 3000);
+
+//kupi ime i sliku iz arhiva jsona i stavlja u photobanner
