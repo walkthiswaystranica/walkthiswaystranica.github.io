@@ -8,18 +8,13 @@ body {
     color: white;
     margin: 0px;
     
-    background-image: url("../pictures/r1.jpg");
+    background-image: url("./pictures/r1.jpg");
     background-size: contain;
 }
 
 img {
     width: 100%;
     height: auto;
-}
-
-p {
-    max-width: 30rem;
-    margin:  1rem auto;
 }
 
 header {
@@ -132,7 +127,7 @@ aside {
     flex-direction: column;
     justify-content: space-around;
 
-    background-image: url("../../pictures/rock.jpg");
+    background-image: url("./pictures/rock.jpg");
     background-size: contain;
 }
 
@@ -202,11 +197,6 @@ h1 {
 
 #glavna figure {
     max-width: 800px;
-    margin: 10px auto;
-}
-
-figure {
-    max-width: 600px;
     margin: 10px auto;
 }
 

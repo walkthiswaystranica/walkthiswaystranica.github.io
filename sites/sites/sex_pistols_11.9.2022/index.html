@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 951px)">
+    <link rel="stylesheet" href="../css.css" media="screen and (min-width: 950px)">
+
+    <title>Walk this way</title>
+</head>
+<body>
+
+    <header>
+        <!-- -->
+        <nav id="buttons">
+            <div id="wtw-ikona"><a href="./index.html"><img src="../../pictures/wtw.jpg" alt="Walk this way"></a></div>
+            <span onclick="skrollaj('infinite-scroll')" class="bs">Najnovije</span>
+            <span onclick="skrollaj('svirke')" class="bs">Svirke</span>
+            <span onclick="skrollaj('zanimljivosti')" class="bs">Zanimljivosti</span>
+            <span onclick="skrollaj('recenzije')" class="bs">Recenzije</span>
+            <a href="../sites/o_nama/index.html" class="bs">O nama</a>
+        </nav>
+            <!-- desno allignat -->
+        <nav id="socials" class="bs">
+            <div><a href="https://www.instagram.com/walk.this.way.stranica/"><img src="../../pictures/ig_icon.png" alt="ig"></a></div>
+            <div><a href="https://www.youtube.com/watch?v=SHa1UZfEkj8"><img src="../../pictures/yt_icon.png" alt="yt"></a></div>
+            <div><a href="./sites/arhiva/index.html"><img src="../../pictures/search.png" alt=""></a></div>
+        </nav>
+
+        <nav id="crtice" class="ss">
+            <img src="../../pictures/crtice.png" alt="">
+
+            <div id="mobile-sidebar">
+                <h2>Navigacija</h2>
+                <br>
+                <a href="../sites/arhiva/index.html">Pretraži</a>
+                <span onclick="skrollaj('infinite-scroll')" class="ss">Najnovije</span>
+                <span onclick="skrollaj('svirke')" class="ss">Svirke</span>
+                <span onclick="skrollaj('zanimljivosti')" class="ss">Zanimljivosti</span>
+                <span onclick="skrollaj('recenzije')" class="ss">Recenzije</span>
+                <a href="../sites/o_nama/index.html" class="ss">O nama</a>
+
+                <p>Promovišemo Rock svu kulturu, i staro i novo! Ako imaš bend i želiš da pišemo o tebi kontaktiraj nas!</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sidebar-hidden" id="main">
+        <div class="content" id="content">
+            <section id="banner">
+                <h1>Balkanska Rock Stranica</h1>
+            </section>
+
+            <section id="glavna">
+                <figure><img src="./pictures/1.jpg" alt=""></figure>
+                <h1>Svirka koja je promjenila svijet</h1>
+            </section>
+
+            <section>
+                <p>Februar je 1976. godine i londonski punk bend Sex Pistols postoji tek nekoliko meseci i iza
+                    sebe gotovo i da nema nekih nastupa. Zahvaljujući NME recenziji prvog nastupa, momci
+                    Pete Shelley i Howard Devoto su doznali za njih i uputili se iz Manchestera ka Londonu da
+                    vide i čuju Pistolse. Inpresionirani onime čemu su prisustvovali Shelley i Devoto odlučuju da
+                    pozovu bend da svira u Manchesteru u junu iste godine, ali i da osnuju svoj sopstveni bend -
+                    Buzzcocks.</p>
+
+                <figure><img src="./pictures/2.jpg" alt=""></figure>
+                <p>Vesti o svirci Sex Pistolsa 4. juna 1976. godine u Lesser Free Trade Hallu u Manchesteru širile
+                    su se gradom od usta do usta. U toj sali, te večeri nalazili su se neki od muzičara koji će već
+                    sutra inspirisani Pistolsima, osnovati svoje bendove i ostaviti dubok trag u istoriji muzike.
+                    Buzzcocks, Joy Division, The Fall, ali i mnogi drugi muzičari smatraju ovo kao ključan datum
+                    za svoje karijere.</p>
+                
+                <p>Vesti o svirci Sex Pistolsa 4. juna 1976. godine u Lesser Free Trade Hallu u Manchesteru širile
+                    su se gradom od usta do usta. U toj sali, te večeri nalazili su se neki od muzičara koji će već
+                    sutra inspirisani Pistolsima, osnovati svoje bendove i ostaviti dubok trag u istoriji muzike.
+                    Buzzcocks, Joy Division, The Fall, ali i mnogi drugi muzičari smatraju ovo kao ključan datum
+                    za svoje karijere.</p>
+            </section>
+
+            <section id="infinite-scroll">
+                <div class="photobanner">
+                    <figure class="anchor"><img src="../../pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption> <div class="folija"></div></figure> <figure class="anchor"> <img src="../../pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption><div class="folija"></div></figure><figure class="anchor"><img src="../../pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption><div class="folija"></div></figure>
+                    <figure class="anchor"><img src="../../pictures/slika.JPG" alt=""> <figcaption>Vijest! nesto se desilo<br>10.9.2022</figcaption> <div class="folija"></div></figure> <figure class="anchor"> <img src="../../pictures/wtw.jpg" alt=""> <figcaption>Novost! nesto novo u starom mjestu.<br> Zar je moguće? <br>9.9.2022</figcaption><div class="folija"></div></figure><figure class="anchor"><img src="../../pictures/1.jpeg" alt=""> <figcaption>Wow neka svirkica nesto<br>10.9.2022</figcaption><div class="folija"></div></figure>
+                </div>
+            </section>
+
+            <footer class="bs">
+                <p>Ne možeš naći članak koji tražiš? <a href="">Klikni ovdje</a></p>
+                <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                    Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                    <a href=""><img src="./pictures/ig_icon.png" alt=""></a>
+                    <a href=""><img src="./pictures/yt_icon.png" alt=""></a>
+            </footer>
+        </div>
+
+        <aside id="aside">
+            <h2 class="ss">Najpotcjenjeniji Panterin Riff</h2>
+            <a href="../pantera_12.9.2022/index.html"><article class="anchor">
+                <img src="../pantera_12.9.2022/pictures/1.jpg" alt="">
+                <div class="folija"><figcaption>Najpotcjenjeniji Panterin Riff</figcaption></div>
+            </article></a>
+
+            <h2 class="ss">The Cult</h2>
+            <a href="../cult_3.10.2022/index.html"><article class="anchor">
+                <img src="../cult_3.10.2022/pictures/1.jpg" alt="">
+                <div class="folija"><figcaption>The Cult</figcaption></div>
+            </article></a>
+            <p id="pad"></p>
+        </aside>
+        
+        <footer class="ss">
+            <p>Ne možeš naći članak koji tražiš? <a href="">Klikni ovdje</a></p>
+            <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                <a href=""><img src="../../pictures/ig_icon.png" alt=""></a>
+                <a href=""><img src="../../pictures/yt_icon.png" alt=""></a>
+        </footer>
+    </main>  
+    <script src="../js.js"></script>
+</body>
+</html>

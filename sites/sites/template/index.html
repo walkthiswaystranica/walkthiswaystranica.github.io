@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 951px)">
+    <link rel="stylesheet" href="../css.css" media="screen and (min-width: 950px)">
+
+    <title>Walk this way</title>
+</head>
+<body>
+
+    <header>
+        <!-- -->
+        <nav id="buttons">
+            <div id="wtw-ikona"><a href="./index.html"><img src="../../pictures/wtw.jpg" alt="Walk this way"></a></div>
+            <span onclick="skrollaj('infinite-scroll')" class="bs">Najnovije</span>
+            <span onclick="skrollaj('svirke')" class="bs">Svirke</span>
+            <span onclick="skrollaj('zanimljivosti')" class="bs">Zanimljivosti</span>
+            <span onclick="skrollaj('recenzije')" class="bs">Recenzije</span>
+            <a href="../sites/o_nama/index.html" class="bs">O nama</a>
+        </nav>
+            <!-- desno allignat -->
+        <nav id="socials" class="bs">
+            <div><a href="https://www.instagram.com/walk.this.way.stranica/"><img src="../../pictures/ig_icon.png" alt="ig"></a></div>
+            <div><a href="https://www.youtube.com/watch?v=SHa1UZfEkj8"><img src="../../pictures/yt_icon.png" alt="yt"></a></div>
+            <div><a href="./sites/arhiva/index.html"><img src="../../pictures/search.png" alt=""></a></div>
+        </nav>
+
+        <nav id="crtice" class="ss">
+            <img src="../../pictures/crtice.png" alt="">
+
+            <div id="mobile-sidebar">
+                <h2>Navigacija</h2>
+                <br>
+                <a href="../sites/arhiva/index.html">Pretraži</a>
+                <span onclick="skrollaj('infinite-scroll')" class="ss">Najnovije</span>
+                <span onclick="skrollaj('svirke')" class="ss">Svirke</span>
+                <span onclick="skrollaj('zanimljivosti')" class="ss">Zanimljivosti</span>
+                <span onclick="skrollaj('recenzije')" class="ss">Recenzije</span>
+                <a href="../sites/o_nama/index.html" class="ss">O nama</a>
+
+                <p>Promovišemo Rock svu kulturu, i staro i novo! Ako imaš bend i želiš da pišemo o tebi kontaktiraj nas!</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sidebar-hidden" id="main">
+        <div class="content" id="content">
+            <section id="banner">
+                <h1>Balkanska Rock Stranica</h1>
+            </section>
+
+            <!-- naslov i glavna slika (1)  -->
+
+            <section id="glavna">
+                <figure><img src="./pictures/1.jpg" alt=""></figure>
+                <h1>Naslov</h1>
+            </section>
+
+            <section>
+                <p> prvi paragraf teksta <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe deleniti est culpa facere nemo aspernatur veniam eaque. Facere necessitatibus omnis repellendus alias. Eligendi doloremque dolorum nulla officiis minima saepe!</p>
+                
+                <!-- druga slika ako je ima, ako ne samo obrisi ovaj citav red ispod gdje pise figure -->
+                <figure><img src="" alt=""></figure>
+
+                <p>prostor za drugi tekst ako ga ima, ako ga nema samo obrisi citav ovaj red <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nulla minus iusto. Quis nisi ratione maxime fugiat qui explicabo facere? Doloribus excepturi obcaecati harum maiores officia perferendis saepe minus magnam.   </p>
+            </section>
+
+            <section id="infinite-scroll">
+                <div class="photobanner" data-user-cards-container>
+                <template data-user-template>
+                    <figure class="anchor">
+                        <img src="1.jpg" alt="" data-header>
+                        <figcaption data-body></figcaption>
+                        <a href="" data-povez><div class="folija"></div></a>
+                    </figure>
+                </template>
+            </section>
+            <script src="../../infiniscroll.js"></script>
+
+            <footer class="bs">
+                <p>Ne možeš naći članak koji tražiš? <a href="">Klikni ovdje</a></p>
+                <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                    Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                    <a href=""><img src="./pictures/ig_icon.png" alt=""></a>
+                    <a href=""><img src="./pictures/yt_icon.png" alt=""></a>
+            </footer>
+        </div>
+
+            <!-- ovdje povezujemo dva slicna clanka -->
+        <aside id="aside">
+            <h2 class="ss">Naslov slicnog clanka za mobitel</h2>
+            <!-- link i slika koji vode do tog clanka (../ime foldera/index.html) za clanak, (../ime foldera/pictures/1.jpg) -->
+            <a href="../ime foldera/index.html"><article class="anchor">
+                <img src="../ime foldera/pictures/1.jpg" alt="">
+                <div class="folija"><figcaption>Naslov slicnog clanka za komp</figcaption></div>
+            </article></a>
+
+            <!-- isto ko gore -->
+            <h2 class="ss">Naslov slicnog clanka za mobitel</h2>
+            <!-- link i slika koji vode do tog clanka (../ime foldera/index.html) za clanak, (../ime foldera/pictures/1.jpg) -->
+            <a href="../ime foldera/index.html"><article class="anchor">
+                <img src="../ime foldera/pictures/1.jpg" alt="">
+                <div class="folija"><figcaption>Naslov slicnog clanka za komp</figcaption></div>
+            </article></a>
+
+            <p id="pad"></p>
+        </aside>
+        
+        <footer class="ss">
+            <p>Ne možeš naći članak koji tražiš? <a href="../arhiva/index.html">Klikni ovdje</a></p>
+            <p>Cilj Walk this way-a je promocija Rock kulture. Ako si ti umjetnik ili umjetnica 
+                Kontaktiraj nas. Volimo podržavati mlade talente u usponu! </p>
+                <a href=""><img src="../../pictures/ig_icon.png" alt=""></a>
+                <a href=""><img src="../../pictures/yt_icon.png" alt=""></a>
+        </footer>
+    </main>  
+    <script src="../js.js"></script>
+</body>
+</html>

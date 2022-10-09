@@ -1,13 +1,3 @@
-console.log("connected")
-
-
-// dizanje zastora
-let zastor = document.getElementById("zastor");
-setTimeout(()=>{
-    zastor.style.transform ="translateY(-4000px)"}
-    ,1000)
-    
-
 
 
 // nav skrollanje
@@ -42,5 +32,3 @@ let source_brojac = 0
 setInterval(() => {
     galerijica.src = "./pictures/" + (((source_brojac += 1) % 4)+1) + ".jpeg"
 }, 3000);
-
-//kupi ime i sliku iz arhiva jsona i stavlja u photobanner
